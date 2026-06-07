@@ -10,22 +10,20 @@
       
       
       
-        <link rel="next" href="../../theory/moebius_inversion/">
-      
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>扩展欧几里得算法 - PHOI_NOTES</title>
+        <title>PHOI_NOTES</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -46,7 +44,7 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -63,11 +61,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#exgcd" class="md-skip">
-          跳转至
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -78,7 +71,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="PHOI_NOTES" class="md-header__button md-logo" aria-label="PHOI_NOTES" data-md-component="logo">
+    <a href="." title="PHOI_NOTES" class="md-header__button md-logo" aria-label="PHOI_NOTES" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              扩展欧几里得算法
+              Home
             
           </span>
         </div>
@@ -169,13 +162,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="algorithm/exgcd/" class="md-tabs__link">
           
   
   
@@ -195,7 +186,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../theory/moebius_inversion/" class="md-tabs__link">
+        <a href="theory/moebius_inversion/" class="md-tabs__link">
           
   
   
@@ -229,7 +220,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="PHOI_NOTES" class="md-nav__button md-logo" aria-label="PHOI_NOTES" data-md-component="logo">
+    <a href="." title="PHOI_NOTES" class="md-nav__button md-logo" aria-label="PHOI_NOTES" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -244,29 +235,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   
@@ -284,7 +270,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -299,37 +285,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    扩展欧几里得算法
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="algorithm/exgcd/" class="md-nav__link">
         
   
   
@@ -345,48 +304,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        过程 &amp; 原理
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        得到通解
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -456,7 +373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../theory/moebius_inversion/" class="md-nav__link">
+      <a href="theory/moebius_inversion/" class="md-nav__link">
         
   
   
@@ -501,38 +418,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        过程 &amp; 原理
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        得到通解
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -549,53 +434,9 @@
 
 
 
-<h1 id="exgcd">扩展欧几里得算法（exgcd）</h1>
-<p>exgcd 能够求出形如 <span class="arithmatex">\(ax + by = \gcd(a, b)\)</span> 的方程的一组特解。</p>
-<h2 id="_1">过程 &amp; 原理</h2>
-<p>对于方程 <span class="arithmatex">\(ax + by = \gcd(a, b)\)</span>，
-我们考虑求出方程 <span class="arithmatex">\((b \bmod a)x + ay = \gcd(a, b)\)</span> 的一组解，
-进而反推出原方程的一组解。</p>
-<p>根据辗转相除法，该递归过程的边界情况为 <span class="arithmatex">\(0x + \gcd(a, b)y = \gcd(a, b)\)</span>，此时有：
-$$
-\begin{cases}
-  x \in \mathbb{R} \newline
-  y = 1
-\end{cases}
-$$
-符合方程。为方便计算以及防止解过大，通常取 <span class="arithmatex">\(x = 0\)</span>。</p>
-<p>又 
-$$
-\begin{aligned}
-  (b \bmod a)x + ay = \gcd(a, b) \newline
-  \iff (b - a\lfloor \frac{b}{a} \rfloor )x + ay = \gcd(a, b) \newline
-  \iff a(y - \lfloor \frac{b}{a} \rfloor x) + bx = \gcd(a, b)
-\end{aligned}
-$$
-故得到方程 <span class="arithmatex">\((b \bmod a)x + ay = \gcd(a, b)\)</span> 的一组解
-<span class="arithmatex">\(x = x_0, y = y_0\)</span> 后，可以得到方程 <span class="arithmatex">\(ax + by = \gcd(a, b)\)</span> 的一组解：
-$$
-\begin{cases}
-  x = y_0 - \lfloor \frac{b}{a} \rfloor x_0 \newline
-  y = x_0
-\end{cases}
-$$
-重复该过程即可得到原方程的一组特解。</p>
-<h2 id="_2">得到通解</h2>
-<p>由
-$$
-\begin{aligned}
-  ax + by = \gcd(a, b)
-  \iff a(x + btk) + b(y - atk) = \gcd(a, b)
-\end{aligned}
-$$
-得 <span class="arithmatex">\(k \in \mathbb{Z}\)</span> 时，使 <span class="arithmatex">\(btk, atk \in \mathbb{Z}\)</span> 的 <span class="arithmatex">\(t_{min} = \frac{1}{\gcd(a, b)}\)</span>，于是原方程有通解式：
-$$
-\begin{cases}
-  x = x_0 + \frac{b}{\gcd(a, b)}k \newline
-  y = y_0 - \frac{a}{\gcd(a, b)}k 
-\end{cases}
-$$
-其中 <span class="arithmatex">\(k \in \mathbb{Z}\)</span>。</p>
+  <h1>Home</h1>
+
+<p>对。</p>
 
 
 
@@ -645,12 +486,12 @@ $$
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../javascripts/katex.js"></script>
+        <script src="javascripts/katex.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.js"></script>
       
