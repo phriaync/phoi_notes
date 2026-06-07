@@ -9,8 +9,8 @@
       
       
       
+        <link rel="prev" href="../../algorithm/exgcd/">
       
-        <link rel="next" href="../../theory/moebius_inversion/">
       
       
         
@@ -21,7 +21,7 @@
     
     
       
-        <title>扩展欧几里得算法 - PHOI_NOTES</title>
+        <title>莫比乌斯反演 - PHOI_NOTES</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exgcd" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              扩展欧几里得算法
+              莫比乌斯反演
             
           </span>
         </div>
@@ -169,13 +169,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../algorithm/exgcd/" class="md-tabs__link">
           
   
   
@@ -191,11 +189,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../theory/moebius_inversion/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -244,6 +244,91 @@
       
   
   
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    算法
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    算法
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algorithm/exgcd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    扩展欧几里得算法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -263,17 +348,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    算法
+    理论
   
 
     
@@ -284,12 +369,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
-    算法
+    理论
   
 
           </label>
@@ -318,7 +403,7 @@
   <span class="md-ellipsis">
     
   
-    扩展欧几里得算法
+    莫比乌斯反演
   
 
     
@@ -336,7 +421,7 @@
   <span class="md-ellipsis">
     
   
-    扩展欧几里得算法
+    莫比乌斯反演
   
 
     
@@ -362,10 +447,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        过程 &amp; 原理
+        莫比乌斯函数
       
     </span>
   </a>
@@ -373,10 +458,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        得到通解
+        莫比乌斯反演
       
     </span>
   </a>
@@ -387,91 +472,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    理论
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    理论
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../theory/moebius_inversion/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    莫比乌斯反演
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -511,10 +511,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        过程 &amp; 原理
+        莫比乌斯函数
       
     </span>
   </a>
@@ -522,10 +522,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        得到通解
+        莫比乌斯反演
       
     </span>
   </a>
@@ -549,53 +549,59 @@
 
 
 
-<h1 id="exgcd">扩展欧几里得算法（exgcd）</h1>
-<p>exgcd 能够求出形如 <span class="arithmatex">\(ax + by = \gcd(a, b)\)</span> 的方程的一组特解。</p>
-<h2 id="_1">过程 &amp; 原理</h2>
-<p>对于方程 <span class="arithmatex">\(ax + by = \gcd(a, b)\)</span>，
-我们考虑求出方程 <span class="arithmatex">\((b \bmod a)x + ay = \gcd(a, b)\)</span> 的一组解，
-进而反推出原方程的一组解。</p>
-<p>根据辗转相除法，该递归过程的边界情况为 <span class="arithmatex">\(0x + \gcd(a, b)y = \gcd(a, b)\)</span>，此时有：
+<h1 id="_1">莫比乌斯反演</h1>
+<h2 id="_2">莫比乌斯函数</h2>
+<p>$$
+\mu(n) = \begin{cases}
+1 &amp; n = 1 \newline
+0 &amp; \exists a \geq 2, a \in \mathbb{N}, a^2 \mid n \newline
+(-1)^k &amp; n = \prod_{i = 1}^k p_i, p_i \in \text{Prime}
+\end{cases} 
 $$
-\begin{cases}
-  x \in \mathbb{R} \newline
-  y = 1
-\end{cases}
+显然莫比乌斯函数为积性函数，但不为完全积性函数。</p>
+<p>同时，莫比乌斯函数具有重要性质：
 $$
-符合方程。为方便计算以及防止解过大，通常取 <span class="arithmatex">\(x = 0\)</span>。</p>
-<p>又 
-$$
-\begin{aligned}
-  (b \bmod a)x + ay = \gcd(a, b) \newline
-  \iff (b - a\lfloor \frac{b}{a} \rfloor )x + ay = \gcd(a, b) \newline
-  \iff a(y - \lfloor \frac{b}{a} \rfloor x) + bx = \gcd(a, b)
-\end{aligned}
-$$
-故得到方程 <span class="arithmatex">\((b \bmod a)x + ay = \gcd(a, b)\)</span> 的一组解
-<span class="arithmatex">\(x = x_0, y = y_0\)</span> 后，可以得到方程 <span class="arithmatex">\(ax + by = \gcd(a, b)\)</span> 的一组解：
-$$
-\begin{cases}
-  x = y_0 - \lfloor \frac{b}{a} \rfloor x_0 \newline
-  y = x_0
-\end{cases}
-$$
-重复该过程即可得到原方程的一组特解。</p>
-<h2 id="_2">得到通解</h2>
-<p>由
+\sum_{d \mid n}\mu(d) = [n = 1]
+$$</p>
+<details class="note">
+<summary>证明</summary>
+<p>当 <span class="arithmatex">\(n = 1\)</span> 时，<span class="arithmatex">\(\sum_{d \mid n}\mu(d) = 1\)</span>。</p>
+<p>否则，设 <span class="arithmatex">\(n = \prod_{i = 1}^k p_i^{a_i},m = \prod_{i = 1}^k p_i\)</span>，此时：
 $$
 \begin{aligned}
-  ax + by = \gcd(a, b)
-  \iff a(x + btk) + b(y - atk) = \gcd(a, b)
+\sum_{d \mid n}\mu(d) 
+&amp;= \sum_{d \mid m}\mu(d) \newline
+&amp;= \sum_{i = 0}^k \dbinom{k}{i}(-1)^i \newline
+&amp;= (1 - 1)^k \newline
+&amp;= 0
 \end{aligned}
+$$</p>
+<p>故 <span class="arithmatex">\(\sum_{d \mid n}\mu(d) = [n = 1]\)</span>。</p>
+</details>
+<p>应用该性质可以得到：
 $$
-得 <span class="arithmatex">\(k \in \mathbb{Z}\)</span> 时，使 <span class="arithmatex">\(btk, atk \in \mathbb{Z}\)</span> 的 <span class="arithmatex">\(t_{min} = \frac{1}{\gcd(a, b)}\)</span>，于是原方程有通解式：
+[i \perp j] = \sum_d [d \mid i][d \mid j]\mu(d)
+$$</p>
+<details class="note">
+<summary>证明</summary>
+<div class="arithmatex">\[
+\begin{aligned}
+[i \perp j]
+&amp;= [\gcd(i, j) = 1] \newline
+&amp;= \sum_{d \mid \gcd(i, j)}\mu(d) \newline
+&amp;= \sum_d [d \mid i][d \mid j]\mu(d)
+\end{aligned}
+\]</div>
+</details>
+<p>其将两数互素的条件转化为一个求和式，方便进一步推导。</p>
+<h2 id="_3">莫比乌斯反演</h2>
+<p>设 <span class="arithmatex">\(f(n), g(n)\)</span> 为两个数论函数，则：
 $$
-\begin{cases}
-  x = x_0 + \frac{b}{\gcd(a, b)}k \newline
-  y = y_0 - \frac{a}{\gcd(a, b)}k 
-\end{cases}
-$$
-其中 <span class="arithmatex">\(k \in \mathbb{Z}\)</span>。</p>
+f(n) = \sum_{d|n}g(d) \iff g(n) = \sum_{d|n}\mu(\frac{n}{d})f(d)
+$$</p>
+<details class="note">
+<summary>证明</summary>
+</details>
 
 
 
