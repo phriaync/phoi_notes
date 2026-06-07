@@ -37,14 +37,14 @@ $$
 $$
 
 ??? note "证明"
-    $$
+    \$
     \begin{aligned}
     [i \perp j]
     &= [\gcd(i, j) = 1] \newline
     &= \sum_{d \mid \gcd(i, j)}\mu(d) \newline
     &= \sum_d [d \mid i][d \mid j]\mu(d)
     \end{aligned}
-    $$
+    \$
 其将两数互素的条件转化为一个求和式，方便进一步推导。
 
 ## 莫比乌斯反演
