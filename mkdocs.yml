@@ -8,10 +8,18 @@ theme:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.details
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js 
+  - https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css
 
 nav:
 - 算法:
   - 扩展欧几里得算法: algorithm/exgcd.md
+- 理论:
+  - 莫比乌斯反演: theory/moebius_inversion.md
